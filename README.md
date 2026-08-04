@@ -1,4 +1,4 @@
-# PDF Question Answering Application (RAG) — Epochs '26, Assignment 11
+# PDF Question Answering Application (RAG) - Epochs '26, Assignment 11
 
 ## Participant Name
 AARON BENNY PHILIP
