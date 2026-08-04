@@ -34,7 +34,7 @@ about the second one?" that depend on earlier turns.
   quality; too-large chunks diluted relevance and ate up LLM context. Settled
   on 1000 characters with 150-character overlap as a balance between recall
   and precision.
-- **Follow-up question resolution**: Vague follow-ups (e.g. "what about the
+- **Follow-up question resolution**: Vague follow-ups (eg: "what about the
   second one?") need the prior conversation turns to be resolved into a
   standalone query before retrieval, otherwise the retriever pulls irrelevant
   chunks. `ConversationalRetrievalChain` combined with `ConversationBufferMemory`
@@ -56,7 +56,7 @@ about the second one?" that depend on earlier turns.
 - **Streaming responses**: Stream LLM tokens to the UI as they're generated
   instead of waiting for the full answer, for a snappier feel.
 - **Citation highlighting**: Link answers back to the exact page/paragraph in
-  the original PDF (e.g. an embedded PDF viewer that jumps to the cited page).
+  the original PDF (eg: an embedded PDF viewer that jumps to the cited page).
 - **Persistent chat history**: Save conversations per user/session so they
   survive a page refresh, instead of resetting on reload.
 - **Offline/local LLM option**: Add an Ollama backend as a fallback so the app
@@ -85,6 +85,6 @@ about the second one?" that depend on earlier turns.
 This app can be deployed for free on **Hugging Face Spaces** (Gradio SDK):
 1. Create a new Space, choose the **Gradio** SDK.
 2. Push `app.py`, `requirements.txt`, and this `README.md` to the Space repo.
-3. In Space **Settings → Repository secrets**, add `GROQ_API_KEY` (optional —
+3. In Space **Settings → Repository secrets**, add `GROQ_API_KEY` (optional:
    users can also paste their own key in the UI).
 4. The Space will build and give you a public URL, that's your deployment link.
