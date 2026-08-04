@@ -1,10 +1,10 @@
 # PDF Question Answering Application (RAG) — Epochs '26, Assignment 11
 
 ## Participant Name
-<!-- TODO: your name -->
+AARON BENNY PHILIP
 
 ## MUID
-<!-- TODO: your MUID -->
+aaronbennyphilip@mulearn
 
 ## Project Overview
 This is a Retrieval-Augmented Generation (RAG) application that lets a user
@@ -14,13 +14,13 @@ an LLM to generate grounded, context-aware answers. Follow-up questions are
 supported through conversation memory.
 
 ## Technologies Used
-- **LangChain** — orchestration of the RAG pipeline
-- **PyPDFLoader** — PDF loading/parsing
-- **RecursiveCharacterTextSplitter** — document chunking
-- **Sentence Transformers** (`all-MiniLM-L6-v2`) — embeddings
-- **ChromaDB** — vector store for similarity search
-- **Groq API** (`llama-3.1-8b-instant`) — free, fast LLM for response generation
-- **Gradio** — interactive web UI
+- **LangChain** - orchestration of the RAG pipeline
+- **PyPDFLoader** - PDF loading/parsing
+- **RecursiveCharacterTextSplitter** - document chunking
+- **Sentence Transformers** (`all-MiniLM-L6-v2`) - embeddings
+- **ChromaDB** - vector store for similarity search
+- **Groq API** (`llama-3.1-8b-instant`) - free, fast LLM for response generation
+- **Gradio** - interactive web UI
 
 ## Memory Implementation
 Conversation history is maintained using LangChain's `ConversationBufferMemory`,
@@ -87,4 +87,4 @@ This app can be deployed for free on **Hugging Face Spaces** (Gradio SDK):
 2. Push `app.py`, `requirements.txt`, and this `README.md` to the Space repo.
 3. In Space **Settings → Repository secrets**, add `GROQ_API_KEY` (optional —
    users can also paste their own key in the UI).
-4. The Space will build and give you a public URL — that's your deployment link.
+4. The Space will build and give you a public URL, that's your deployment link.
