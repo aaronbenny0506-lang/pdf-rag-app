@@ -109,7 +109,7 @@ with st.sidebar:
 # Main chat area
 # ---------------------------------------------------------------------
 if not st.session_state.vector_store:
-    st.info("👈 Upload a PDF in the sidebar and enter your Gemini API key to get started.")
+    st.info("👈 Upload a PDF in the sidebar and enter your Groq API key to get started.")
 else:
     # Render existing chat history
     for turn in st.session_state.chat_display:
