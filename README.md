@@ -1,10 +1,10 @@
-# PDF Question Answering Application (RAG) — Epochs '26, Assignment 11
+# PDF Question Answering Application (RAG) - Epochs '26, Assignment 11
 
 ## Participant Name
-<!-- TODO: your name -->
+AARON BENNY PHILIP
 
 ## MUID
-<!-- TODO: your MUID -->
+aaronbennyphilip@mulearn
 
 ## Project Overview
 This is a Retrieval-Augmented Generation (RAG) application that lets a user
@@ -14,12 +14,12 @@ an LLM to generate grounded, context-aware answers. Follow-up questions are
 supported through conversation memory.
 
 ## Technologies Used
-- **PyPDFLoader** (LangChain) — PDF loading/parsing
-- **RecursiveCharacterTextSplitter** — document chunking (1000 chars, 150 overlap)
-- **Sentence Transformers** (`all-MiniLM-L6-v2`, run locally) — embeddings
-- **FAISS** — in-memory vector store for similarity search
-- **Groq API** (`llama-3.1-8b-instant`) — free, fast LLM for response generation
-- **Streamlit** — interactive web UI
+- **PyPDFLoader** (LangChain) - PDF loading/parsing
+- **RecursiveCharacterTextSplitter** - document chunking (1000 chars, 150 overlap)
+- **Sentence Transformers** (`all-MiniLM-L6-v2`, run locally) - embeddings
+- **FAISS** - in-memory vector store for similarity search
+- **Groq API** (`llama-3.1-8b-instant`) - free, fast LLM for response generation
+- **Streamlit** - interactive web UI
 
 ## Memory Implementation
 Conversation history is kept in a small custom `ConversationMemory` class
@@ -70,12 +70,12 @@ packages across recent releases.
 - **Streaming responses**: Stream LLM tokens to the UI as they're generated
   instead of waiting for the full answer, for a snappier feel.
 - **Citation highlighting**: Link answers back to the exact page/paragraph in
-  the original PDF (e.g. an embedded PDF viewer that jumps to the cited page).
+  the original PDF (eg: an embedded PDF viewer that jumps to the cited page).
 - **Persistent chat history**: Save conversations per user so they survive a
   page refresh, instead of resetting on reload.
 - **Offline/local LLM option**: Add an Ollama backend as a fallback so the app
   can run fully offline without depending on a hosted API or rate limits.
-- **Better chunking**: Explore semantic or layout-aware chunking (e.g.
+- **Better chunking**: Explore semantic or layout-aware chunking (eg:
   respecting headings/tables) instead of fixed-size character splitting, to
   improve retrieval quality on structured PDFs.
 
